@@ -1,5 +1,5 @@
 # Coffee-Shop-Responsive
- A responsive website for a Coffee Shop
+ <title>A responsive website for a Coffee Shop</title>
  
 <h3>A short summarize gif of the website.</h3>
 
