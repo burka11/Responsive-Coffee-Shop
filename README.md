@@ -7,7 +7,7 @@
 
 
 <h2> HOME PAGE</h2>
-<img src="screenshots/main.png">
+<img style="width:700px;height:400px" src="screenshots/main.png">
 
 <h2> ABOUT PAGE</h2>
 <img src="screenshots/about.png">
