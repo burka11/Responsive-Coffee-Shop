@@ -1,5 +1,5 @@
 # Coffee-Shop-Responsive
- <h1>A responsive website for a Coffee Shop</h1>
+ <h4>This repo includes a coffee shop website in responsive design.</h4>
  
 <h3>A short summarize gif of the website.</h3>
 
