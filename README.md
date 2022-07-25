@@ -1,8 +1,20 @@
 # Coffee-Shop-Responsive
  A responsive website for a Coffee Shop
-
-<div style="container">
+ 
+<h3>A short summarize gif of the website.</h3>
 ![](screenshots/gif.gif)
-</div> 
 
+
+<h2> HOME PAGE</h2>
+<img src="screenshots/main.png">
+
+<h2> ABOUT PAGE</h2>
 <img src="screenshots/about.png">
+
+<img src="screenshots/abouot2.png">
+
+<h2> DISCOVER PAGE</h2>
+<img src="screenshots/discover.png">
+
+<h2> CONTACT PAGE AND FOOTER</h2>
+<img src="screenshots/contact and footer.png">
