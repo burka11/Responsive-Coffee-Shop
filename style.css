@@ -413,3 +413,28 @@ h4{
         text-align: center;
     }
 }
+
+.second {
+    width: 100%;
+    height: 1000px;
+    background: #999;
+    transition: .5s;
+}
+.aboutClick{
+    width: 100%;
+    height: 1000px;
+    background: #999;
+    transition: .5s;
+}
+.discoverClick{
+    width: 100%;
+    height: 1000px;
+    background: #999;
+    transition: .5s;
+}
+.contactClick{
+    width: 100%;
+    height: 1000px;
+    background: #999;
+    transition: .5s;
+}

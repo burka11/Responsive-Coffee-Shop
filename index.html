@@ -19,15 +19,15 @@
         <div class="header">
             <div class="container">
                 <div class="header-navbar">
-                    <div class="header-logo">
+                    <div id="homeClick" class="header-logo">
                         <h2>COFFEE</h2>
                     </div>
                     <div class="header-menu">
                         <ul id="menuItems">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Discover</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" onclick="smoothScroll(document.getElementById('homeClick'))">Home</a></li>
+                            <li><a href="#" onclick="smoothScroll(document.getElementById('aboutClick'))">About</a></li>
+                            <li><a href="#" onclick="smoothScroll(document.getElementById('discoverClick'))">Discover</a></li>
+                            <li><a href="#" onclick="smoothScroll(document.getElementById('contactClick'))">Contact</a></li>
                         </ul>
                         <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle()"></i>
                     </div>
@@ -35,7 +35,7 @@
                 <div class="header-text">
                     <h1><span class="first-letter">W</span>elcome</h1>
                     <h3>Fill me up with coffee</h3>
-                    <a href="#" class="btn-coffee">Get Started</a>
+                    <a href="#" class="btn-coffee" onclick="smoothScroll(document.getElementById('second'))">Get Started</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
     <section id="about">
         <div class="about">
             <div class="container">
-                <div class="about-title">
+                <div id="aboutClick" class="about-title">
                     <h2>ABOUT</h2>
                 </div>
                 <div class="about-content">
@@ -69,7 +69,7 @@
 
     <!-- PORTFOLIO -->
     <section id="portfolio">
-        <div class="portfolio">
+        <div id="second" class="portfolio">
             <div class="portfolio-item ani1">
                 <img src="/images/01.jpg" alt="">
                 <div class="overlay">
@@ -128,7 +128,7 @@
     <section id="about">
         <div class="about">
             <div class="container">
-                <div class="about-title">
+                <div id="discoverClick" class="about-title">
                     <h2>DISCOVER</h2>
                 </div>
                 <div class="about-content">
@@ -153,7 +153,7 @@
     <!-- CONTACT -->
     <section id="contact">
         <div class="container">
-            <div class="page-title">
+            <div id="contactClick" class="page-title">
                 <h2>CONTACT</h2>
             </div>
             <div class="contact-content">
@@ -242,6 +242,29 @@
         ScrollReveal().reveal('.ani6',{delay:1500});
         ScrollReveal().reveal('.ani7',{delay:1750});
         ScrollReveal().reveal('.ani8',{delay:2000});
+
+        window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
     </script>
     <script>
         var menuItems = document.getElementById('menuItems');
