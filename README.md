@@ -10,12 +10,12 @@
 <img style="width:700px;height:400px" src="screenshots/main.png">
 
 <h2> ABOUT PAGE</h2>
-<img src="screenshots/about.png">
+<img style="width:700px;height:400px" src="screenshots/about.png">
 
-<img src="screenshots/about2.png">
+<img style="width:700px;height:400px" src="screenshots/about2.png">
 
 <h2> DISCOVER PAGE</h2>
-<img src="screenshots/discover.png">
+<img style="width:700px;height:400px" src="screenshots/discover.png">
 
 <h2> CONTACT PAGE AND FOOTER</h2>
-<img src="screenshots/contact and footer.png">
+<img style="width:700px;height:400px" src="screenshots/contact and footer.png">
