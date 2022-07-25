@@ -2,6 +2,7 @@
  A responsive website for a Coffee Shop
  
 <h3>A short summarize gif of the website.</h3>
+
 ![](screenshots/gif.gif)
 
 
@@ -11,7 +12,7 @@
 <h2> ABOUT PAGE</h2>
 <img src="screenshots/about.png">
 
-<img src="screenshots/abouot2.png">
+<img src="screenshots/about2.png">
 
 <h2> DISCOVER PAGE</h2>
 <img src="screenshots/discover.png">
